@@ -1,0 +1,13 @@
+.heading {
+  color: steelblue;
+  font-size: 1.25rem;
+  /* You can "single" elements out if you want different transition times */
+  /* transition: color 500ms, font-size 1s; */
+  /* or if you want the same time for all elements, you can use "all" */
+  transition: all 500ms;
+
+  &:is(:hover) {
+    color: hotpink;
+    font-size: 1.5rem;
+  }
+}
