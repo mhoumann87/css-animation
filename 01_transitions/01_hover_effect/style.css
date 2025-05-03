@@ -1,8 +1,6 @@
 .heading {
   color: darkblue;
   font-size: 15px;
-  /* make the effect more smooth */
-  transition: all 250ms;
 
   &:is(:hover) {
     color: aqua;
