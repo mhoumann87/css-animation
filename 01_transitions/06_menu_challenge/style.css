@@ -1,0 +1,60 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    color: darkslategray;
+    font-family: system-ui, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    border-bottom: 3px solid steelblue;
+
+    & h1 {
+        font-size: 3.2rem;
+        transition: color 500ms ease-in;
+
+        &:is(:hover) {
+            color: crimson;
+        }
+    }
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-bottom: 2rem;
+
+    & a {
+        text-decoration: none;
+        font-size: 2rem;
+        transition: all 500ms ease-in;
+        color: darkslategray;
+
+        &:is(:hover) {
+            font-size: 2.3rem;
+            color: aquamarine;
+        }
+    }
+}
+
+main {
+    width:85%;
+    margin-inline:  auto;
+    display: grid;
+    place-items: center;
+}
