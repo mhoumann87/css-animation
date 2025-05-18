@@ -1,0 +1,28 @@
+.box {
+  width: 50px;
+  height: 50px;
+  background: crimson;
+  border: 1px solid black;
+
+  animation: grow 3s ease infinite;
+}
+
+@keyframes grow {
+  0% {
+    width: 50px;
+    height: 50px;
+    background: crimson;
+  }
+
+  30% {
+    width: 50px;
+    height: 100px;
+    background: steelblue;
+  }
+
+  100% {
+    width: 100px;
+    height: 100px;
+    background: seagreen;
+  }
+}
